@@ -11,7 +11,7 @@
 <body>
 
 		
-	<img class="coverpic" src="img/coverpic.jpg" />
+	<img class="coverpic" src="img/cover.jpg" alt="cover picture" />
 
 	<nav>
 	 <ul>
@@ -21,11 +21,13 @@
 	</ul>
 	</nav>
 
-	<h1>Dennis L</h1>
 
-		<div class="jobtitle">
-			<span>FRONT END WEB DEVELOPER</span>
-		</div>
+				<div class="top">
+					<h1>Dennis L</h1>
+					
+					<span class="jobtitle">FRONT END WEB DEVELOPER</span>
+				</div>
+
 
 
 	<div class='about'>
@@ -34,63 +36,44 @@
 
 			<div id="week-wrap">
 
-					<div id="card" onclick="flip()">
-						<div class="figcaption">Education</div>
-						<img src="img/cap.png" alt="flipcard" />
-					  <div class="back"><h5>2012- Graduated from DePaul with a Business<br>Management Degree  
-					  <br><br> 2016- Started teaching myself web development<br>using free code camp<br> and books by Jon Duckett</h5>			 
-					</div> 
+						<div id="card" onclick="flip()">
+							<div class="figcaption">Education</div>
+							<img src="img/cap.png" alt="flipcard" />
+						  <div class="back"><h5>2012- Graduated from DePaul with a Business<br>Management Degree  
+						  <br><br> 2016- Started teaching myself web development<br>using free code camp<br> and books by Jon Duckett</h5>			 
+						</div> 
 					  
-					</div>				    
-					    <div id="card2" onclick="flip2()">
-						<div class="figcaption">Goals</div>
-						<img src="img/coding.png" alt="flipcard" />
-					      <div class="back"><h5>Get hired as a front end web developer<br><br> Get signed with a music label<br><br>Improve at web development (especially design)<br><br></h5>
-					</div> 
+						</div>				    
+						    <div id="card2" onclick="flip2()">
+							<div class="figcaption">Skills</div>
+							<img src="img/coding.png" alt="flipcard" />
+						      <div class="back"><h5>HTML<br><br> CSS/SASS<br><br>JavaScript<br><br>jQuery<br><br>Bootstrap<br><br> Adobe Photoshop<br><br></h5>
+						</div> 
 					        
 					      
-					</div>
+						</div>
 					      
-					       <div id="card3" onclick="flip3()">
-						<div class="figcaption">Hobbies</div>
-						<img src="img/guitar.png" alt="flipcard" />
-					      <div class="back"><h5>Playing guitar <br><br>Producing electronic music<br><br> Oil painting<br><br> Muay Thai <br><br>  Web developing</h5>
-					    
-				 </div>       
+						    <div id="card3" onclick="flip3()">
+								<div class="figcaption">Hobbies</div>
+							<img src="img/guitar.png" alt="flipcard" />
+						      <div class="back"><h5>Playing guitar <br><br>Producing electronic music<br><br> Oil painting<br><br> Muay Thai <br><br>  Web developing</h5>					    
+					 		</div>       
 			</div>
 	</div>
 
 
-
-			<div class='skills'>
-				  <h2> Skills</h2>
-				  <h3>Development</h3>
-				  <div class="skill">HTML5</div>
-				  <div class="skill">CSS3/SASS</div>
-				  <div class="skill">JavaScript</div>
-				  <div class="skill">jQuery</div>
-				  <div class="skill">Bootstrap</div>
-				  <div class="skill">PHP</div>
-
-
-				<div class='other'>
-				  <h3>Other Skills</h3>
-				<div class="design">Photoshop</div>
-				<div class="design">Illustrator</div>
-				<div class="design">Office Suite</div> </div> 
-			</div>
-
-
+	
 
 			<div class='portfolio'>
 				<a id="portfolio"></a>
 			  <h2>Projects</h2>
-			  <img class='portpic' src='img/myweb.jpg'>
+			  <img class='portpic' src='img/myweb.jpg' alt="portfolio picture">
 			  
+
 			  <h4>My Webpage</h4>
 			    <div class='boxes'>
-			      <a  class="box"  href="portfolio.html">Site</a>
-			      <div class='box2'>Code</div>
+			      <a  class="box"  href="index.html">Site</a>
+			      <a  class="box2"  href="https://github.com/dennislee89/portfolio">Code</a>
 			    </div>
 			  
 			    <span class='portText'>
@@ -110,7 +93,7 @@
 				
 
 			<div class='portfolio'>	  
-			  <img class='portpic' src='img/chifront.jpg'>
+			  <img class='portpic' src='img/chifront.jpg' alt="chicago picture">
 			  
 			  <h4>Chicago Guide</h4>
 			    <div class='boxes'>
@@ -138,7 +121,7 @@
 
 			<div class='portfolio'>
 			  
-			  <img class='portpic' src='img/bullssite.jpg'>
+			  <img class='portpic' src='img/bullsSite.jpg' alt="bullsfansite picture">
 			  
 			  <h4>Chicago Bulls Fan site</h4>
 			    <div class='boxes'>
@@ -166,7 +149,7 @@
 
 			<div class='portfolio'>
 			  
-			  <img class='portpic' src='img/portfolio1.jpg'>
+			  <img class='portpic' src='img/portfolio1.jpg' alt="badmintonSite picture">
 			  
 			  <h4>Dallas Badminton Club</h4>
 			    <div class='boxes'>
@@ -193,7 +176,7 @@
 				<div class='contact'>
 				<a id="contact"></a>
 					<h2 class='con'>Contact</h2> 
-				  		<img src='img/contactpic.jpg'>
+				  		<img src='img/skillspic.jpg' alt="fields background picture">
 				  
 
 				  	<form action="https://formspree.io/dennislee0890@hotmail.com"
@@ -216,18 +199,18 @@
 
 
 <footer>
-  <ul class='bottom'>
-    <div class="bottomicon fontawesome-github"></div>
-    <div class="bottomicon fontawesome-linkedin-sign"></div>
+  <div class='bottom'>
+   <a href="https://github.com/dennislee89"> <div class="bottomicon fontawesome-github"></div></a>
+   <a href="https://www.linkedin.com/in/dennis-lee-b4785633?trk=nav_responsive_tab_profile"> <div class="bottomicon fontawesome-linkedin-sign"></div></a>
     <div class="bottomicon fontawesome-globe"></div>
-  </ul>
+  </div>
 </footer>				
 			
 
 
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script> 
-<script type="text/javascript" src="javascript/script.js"></script>  
+<script type="text/javascript" src="javascript/portfolioscript.js"></script>  
 <script type="text/javascript" src="javascript/smoothscroll.js"></script>
 
 </body>

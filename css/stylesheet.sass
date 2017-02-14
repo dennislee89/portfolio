@@ -1,4 +1,4 @@
-@import url('http://weloveiconfonts.com/api/?family=fontawesome')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
 
 /* entypo */
 [class*="fontawesome-"]:before 
@@ -32,7 +32,8 @@ h2
   text-align: center 
   width: 95%
   height: 0
-
+  font-weight: bold
+  font-family: 'Open Sans', sans-serif
 .top
   color: white
   position: absolute
@@ -41,6 +42,71 @@ h2
   width: 95%
   height: 0
   top: 35%
+
+.navbar
+  position: relative
+  display: inline-block
+  font-family: 'Open Sans', sans-serif
+
+.navbar:before
+  content: ''
+  width: 0
+  height: 2px
+  background: white
+  position: absolute
+  left: 0
+  bottom: 0
+  -webkit-transition: all 0.3s ease-out
+  transition: all 0.3s ease-out
+
+.navbar:hover:before 
+  width: 100%
+
+//SideNa
+.sidenav 
+  height: 100%
+  width: 0
+  position: fixed
+  z-index: 5
+  top: 0
+  left: 0
+  background-color: #111
+  overflow-x: hidden
+  transition: 0.5s
+  padding-top: 60px
+  text-align: center
+
+#menubtn 
+  display: none
+  position: absolute
+  top: 2%
+  right: 25px
+  font-size: 2.5em
+  cursor: pointer
+  color: white
+  z-index: 501
+
+/*Text inside side bar*/
+.sidenav a
+  padding: 8px 8px 8px 32px
+  text-decoration: none
+  font-size: 2em
+  color: teal
+  display: block
+  transition: 0.3s
+
+/*hover color over links*/
+.sidenav a:hover, .offcanvas a:focus
+  color: #f1f1f1
+
+/*X close button */ 
+.closebtnNav
+  position: absolute
+  top: 5px
+  right: 10px
+  font-size: 75px
+
+
 
 
 /* about me font*/
@@ -88,9 +154,9 @@ nav
        
   li 
     display: inline
-    padding: 50px
+    padding: 35px
     text-align: center    
-    font-size: 1.5em
+    font-size: 1.4em
     z-index: 2
     
     a
@@ -182,25 +248,7 @@ h5
   margin: 10px 20px 10px 10px
   display: inline-block
   
-.skills
-  height: 650px
-  background-image: url(../img/skillspic.jpg)
-  background-size: 100% 800px
-  
-  /* design circles */
-.design
-  width: 100px
-  height: 100px
-  border-radius: 100px
-  font-size: 1em
-  color: white
-  border-style: solid
-  border-color: white
-  line-height: 100px
-  text-align: center
-  background: #000
-  margin: 10px 20px 10px 10px
-  display: inline-block
+
   
 .portfolio
   background-color: #202020 
@@ -269,62 +317,75 @@ span.portText
   text-align: center
   padding-bottom: 2%
 
+
+//contact section
 .contact
-  img
-    width: 100%
-    height: 600px
-    position: absolute
- 
-.namelabel
-  position: absolute
-  text-align: center
-  width: 98%
-  margin-top: 150px
-  font-size: 1.5em
-  color: white
-  font-weight: bold
+  display: flex
+  flex-flow: column
+  min-height: 100vh
+  background-color: #1d1d1d
+  background-image: url(../img/footer.jpg)
+    width: cover
+    background-repeat: no-repeat
+  h2
+    text-align: center
+    font-size: 4em
+    margin: auto auto 0 auto
+    color: #FFF
+    font-family: 'fontawesome', sans-serif
+  span
+    color: white
+    font-family: 'fontawesome', sans-serif
+
+form
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.4)
+  width: 450px
+  margin: auto
+  padding: 20px 15px
+  box-sizing: border-box
+  border-radius: 6px
+  display: flex
+  flex-flow: column
+  background: rgba(0, 0, 0, 0.3)
+
+input
+  margin-bottom: 10px
+  width: 100%
+  padding: 15px
+  box-sizing: border-box
+  font-size: 15px
+  border-radius: 3px
   
-  
-.emaillabel
-  position: absolute
-  text-align: center
-  width: 98%
-  margin-top: 200px
-  font-size: 1.5em 
-  color: white
-  font-weight: bold
-    
-.questionlabel
-  position: absolute
-  text-align: center
-  width: 98%
-  margin-top: 255px
-  font-size: 1.5em
-  color: white
-  font-weight: bold
+input:focus 
+  background-color: #00FFFF
 
 textarea
-  width: 200px
-  height: 100px
-  
-.sendbtn
-  position: absolute
-  text-align: center
-  margin-top: 15px
-  right: 48%
-  background-color: #202020
-  color: #00FFFF
-  padding: 10px 20px
-  text-align: center
-  text-decoration: none
-  display: inline-block
-  border-style: solid
-  
-.sendbtn:hover
-  cursor: pointer
-  color: white
-  background-color: #00FFFF
-  
+  margin-bottom: 10px
+  width: 100%
+  padding: 15px
+  box-sizing: border-box
+  font-size: 15px
+  border-radius: 3px
+  min-height: 100px
+  max-height: 200px
+  max-width: 100%
+
+.contact button
+  margin: auto
+  color: #FFF
+  min-height: 50px
+  min-width: 180px
+  max-width: 100%
+  padding: 2px
+  margin-top: 20px
+  font-size: 18px
+  font-weight: bold
+  background-color: rgba(194, 194, 194, 0.2)
+  border-radius: 3px
+  transition: all 0.3s ease
+  &:hover
+    background-color: #00FFFF
+    cursor: pointer
   
 /*footer*/
 .bottom
@@ -360,6 +421,10 @@ footer
   
   /*media queries*/
 @media screen and (max-width: 770px)
+
+  #menubtn
+    display: block
+    font-size: 2em
 
   h1
     font-size: 4em
@@ -435,6 +500,10 @@ footer
   .jobtitle
     font-size: 1.2em
 
+  form
+    width: 400px
+
 
 @media screen and (max-width: 450px)
-  
+  form
+    width: 320px

@@ -15,15 +15,29 @@
 
 	<nav>
 	 <ul>
-	  <li><a href="#about" class="smoothScroll under">About Me</a></li>
-	  <li><a href="#portfolio" class="smoothScroll under">Projects</a></li>
-	   <li><a href="#contact" class="smoothScroll under">Contact</a></li>
+	  <li><a href="#about" class="smoothScroll navbar">ABOUT ME</a></li>
+	  <li><a href="#portfolio" class="smoothScroll navbar">PROJECTS</a></li>
+	  <li><a href="https://dennisleesite.wordpress.com/" class="smoothScroll navbar">BLOG</a></li>
+	   <li><a href="#contactme" class="smoothScroll navbar">CONTACT</a></li>
 	</ul>
 	</nav>
 
 
+					<!--Side Nav--> 
+				<span id="menubtn" onclick="openNav()">&#9776;</span>
+
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtnNav" onclick="closeNav()">X</a>
+				<a href="#about" class="smoothScroll navbar">About</a>	
+				<a href="#portfolio" class="smoothScroll navbar">Projects</a>
+				<a href="https://dennisleesite.wordpress.com/" class="smoothScroll navbar">Blog</a>
+				<a href="#contactme" class="smoothScroll navbar">Contact</a>
+			</div>
+
+
+
 				<div class="top">
-					<h1>Dennis L</h1>
+					<h1>DENNIS L</h1>
 					
 					<span class="jobtitle">FRONT END WEB DEVELOPER</span>
 				</div>
@@ -56,7 +70,7 @@
 						    <div id="card3" onclick="flip3()">
 								<div class="figcaption">Hobbies</div>
 							<img src="img/guitar.png" alt="flipcard" />
-						      <div class="back"><h5>Playing guitar <br><br>Producing electronic music<br><br> Oil painting<br><br> Muay Thai <br><br>  Web developing</h5>					    
+						      <div class="back"><h5>Playing guitar <br><br>Producing electronic music<br><br> Oil/Digital painting/<br><br> Muay Thai <br><br>  Web developing</h5>					    
 					 		</div>       
 			</div>
 	</div>
@@ -91,32 +105,6 @@
 			  <hr>
 			</div>	
 				
-
-			<div class='portfolio'>	  
-			  <img class='portpic' src='img/chifront.jpg' alt="chicago picture">
-			  
-			  <h4>Chicago Guide</h4>
-			    <div class='boxes'>
-			      <a  class="box"  href="chicago.html">Site</a>
-			      <a  class="box2"  href="https://github.com/dennislee89/guide-to-chicago">Code</a>
-			    </div>
-			  
-			    <span class='portText'>
-			    Designed webpage using HTML, SASS, Javascript, jQuery 
-				<br> Built the site with mobile device first in mind.
-				<br> My first attempt in using/learning how to configure weather API
-				<br> Learned how to use JSON along with the weather API
-			  </span>
-			  
-			  <div class='tags'>
-			      <div class='tag'>HTML</div>
-			      <div class='tag'>CSS</div>
-			      <div class='tag'>JavaScript</div>
-			      <div class='tag'>jQuery</div>
-			      <div class='tag'>API</div>
-			  </div>
-			  <hr>
-			</div>
 
 
 			<div class='portfolio'>
@@ -169,35 +157,59 @@
 			      <div class='tag'>JavaScript</div>
 			      <div class='tag'>jQuery</div>
 			  </div>
+			  <hr>
 			</div>
 
 
 
-				<div class='contact'>
-				<a id="contact"></a>
-					<h2 class='con'>Contact</h2> 
-				  		<img src='img/skillspic.jpg' alt="fields background picture">
-				  
 
-				  	<form action="https://formspree.io/dennislee0890@hotmail.com"
+			<div class='portfolio'>	  
+			  <img class='portpic' src='img/chifront.jpg' alt="chicago picture">
+			  
+			  <h4>Chicago Guide</h4>
+			    <div class='boxes'>
+			      <a  class="box"  href="chicago.html">Site</a>
+			      <a  class="box2"  href="https://github.com/dennislee89/guide-to-chicago">Code</a>
+			    </div>
+			  
+			    <span class='portText'>
+			    Designed webpage using HTML, SASS, Javascript, jQuery 
+				<br> Built the site with mobile device first in mind.
+				<br> My first attempt in using/learning how to configure weather API
+				<br> Learned how to use JSON along with the weather API
+			  </span>
+			  
+			  <div class='tags'>
+			      <div class='tag'>HTML</div>
+			      <div class='tag'>CSS</div>
+			      <div class='tag'>JavaScript</div>
+			      <div class='tag'>jQuery</div>
+			      <div class='tag'>API</div>
+			  </div>
+			 
+			</div>
+
+
+				<div class="contact">
+					<a id="contactme"></a>
+       				 <h2>Contact</h2>
+				        <form id="form" action="https://formspree.io/dennislee0890@hotmail.com"
 				      method="POST">
-				    
-				     	<label class='namelabel'><span>Your Name:</span><br>
-						<input type="text" placeholder='enter name' name="name"></label>
-						<br>
-						<label class='emaillabel'><span >Your Email:</span><br>
-				    	<input type="email" name="_replyto"></label>
-				    	<br>
-				    	<label class='questionlabel'><span>Questions/Request</span><br>
-				    	<textarea name="message" ></textarea>
-				        <br>
-				   		
-				   		<input type="submit" class='sendbtn' value="Send" ></label>
-				    
-					</form> 
-				</div>
+				        	<span >Your Name:</span>
+				         <input id="name" type=text placeholder="Name">
 
+				         	<span >Your Email:</span>
+				         <input  id="email" type=email name="email" placeholder="Email"> 
 
+				         	<span >Your Message:</span>
+				         <textarea id="messages" name="message" placeholder="Message" wrap="virtual"></textarea>
+				         <button type="submit">Submit</button>
+				         <input type="hidden" name="_next" value="" />
+
+				       </form>
+     			 </div>
+
+<!--
 <footer>
   <div class='bottom'>
    <a href="https://github.com/dennislee89"> <div class="bottomicon fontawesome-github"></div></a>
@@ -206,7 +218,7 @@
   </div>
 </footer>				
 			
-
+-->
 
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script> 

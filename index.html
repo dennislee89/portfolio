@@ -6,6 +6,7 @@
 
 <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>		
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -15,10 +16,10 @@
 
 	<nav>
 	 <ul>
-	  <li><a href="#about" class="smoothScroll navbar">ABOUT ME</a></li>
-	  <li><a href="#portfolio" class="smoothScroll navbar">PROJECTS</a></li>
+	  <li><a href="#about" class="navbar">ABOUT ME</a></li>
+	  <li><a href="#portfolio" class="navbar">PROJECTS</a></li>
 	  <li><a href="https://dennisleesite.wordpress.com/" class="smoothScroll navbar">BLOG</a></li>
-	   <li><a href="#contactme" class="smoothScroll navbar">CONTACT</a></li>
+	   <li><a href="#contactme" class="navbar">CONTACT</a></li>
 	</ul>
 	</nav>
 
@@ -28,10 +29,10 @@
 
 			<div id="mySidenav" class="sidenav">
 				<a href="javascript:void(0)" class="closebtnNav" onclick="closeNav()">X</a>
-				<a href="#about" class="smoothScroll navbar">About</a>	
-				<a href="#portfolio" class="smoothScroll navbar">Projects</a>
-				<a href="https://dennisleesite.wordpress.com/" class="smoothScroll navbar">Blog</a>
-				<a href="#contactme" class="smoothScroll navbar">Contact</a>
+				<a href="#about" class="navbar">About</a>	
+				<a href="#portfolio" class="navbar">Projects</a>
+				<a href="https://dennisleesite.wordpress.com/" class="navbar">Blog</a>
+				<a href="#contactme" class="navbar">Contact</a>
 			</div>
 
 
@@ -44,43 +45,48 @@
 
 
 
-	<div class='about'>
-	<a id="about"></a>
-	  <h2 class="aboutMe">About Me</h2>
+			<div class='about'>
+			<a id="about"></a>
+			  <h2>About Me</h2>
 
-			<div id="week-wrap">
+			  	<div id="main-wrap">
+			  		<div id="text-left">
+						<p>I have beeen teaching myself Web development since March 2016<br>I first started with books by Jon Duckett and then moved onto using 
+						FreeCodeCamp.  <br>I graduated from DePaul University with a Bachelors in Business Management in 2012.<br> I currently work full time in the accounting department, but have been learning web development right after work. <br><br>
+							On my free time other than learning about web development, I like to produce electronic music, work out at the gym, Brazilian jiu-jitsu, play guitar, and oil paint. <br> Currently I am familiar with using HTML, CSS/SASS, Javascript, jQuery, Vue, and Bootstrap. <br> As well as basic knowledge of using Adobe Photoshop and Illustrator.
+							
+						</p>
 
-						<div id="card" onclick="flip()">
-							<div class="figcaption">Education</div>
-							<img src="img/cap.png" alt="flipcard" />
-						  <div class="back"><h5>2012- Graduated from DePaul with a Business<br>Management Degree  
-						  <br><br> 2016- Started teaching myself web development<br>using free code camp<br> and books by Jon Duckett</h5>			 
-						</div> 
-					  
-						</div>				    
-						    <div id="card2" onclick="flip2()">
-							<div class="figcaption">Skills</div>
-							<img src="img/coding.png" alt="flipcard" />
-						      <div class="back"><h5>HTML<br><br> CSS/SASS<br><br>JavaScript<br><br>jQuery<br><br>Bootstrap<br><br> Adobe Photoshop<br><br></h5>
-						</div> 
-					        
-					      
-						</div>
-					      
-						    <div id="card3" onclick="flip3()">
-								<div class="figcaption">Hobbies</div>
-							<img src="img/guitar.png" alt="flipcard" />
-						      <div class="back"><h5>Playing guitar <br><br>Producing electronic music<br><br> Oil/Digital painting/<br><br> Muay Thai <br><br>  Web developing</h5>					    
-					 		</div>       
+								<div class="about-tools-flex-bottom">
+									<h3>Tools</h3>
+									 <section class="about-social-flex-middle">
+									 			
+									    <span class="about-tools-overlap footer-social-icons-wrapper">
+										  <a href="#" class="about-tools" ><img src="img/html.png" alt="html icon"></a> 
+									      <a href="#" class="about-tools"><img src="img/css.png" alt="css icon"></a>
+									      <a href="#" class="about-tools" ><img src="img/js.png" alt="javascript icon"></a>
+									      <a href="#" class="about-tools"><img src="img/jquery.png" alt="jquery icon"></a>
+									      <a href="#" class="about-tools"><img src="img/vue.png" alt="vue icon"></a>
+									      <a href="#" class="about-tools"><img src="img/Bootstrap.png" alt="bootstrap icon"></a>
+									      <a href="#" class="about-tools"><img src="img/ps.png" alt="photoshop icon"></a>
+									      </span>
+									  	</section>
+								</div>
+					</div>
+
+
+					<div id="pic-right"> <img src="img/self.jpg" style="width: 50%"></div>
+
+
+				</div>
+
 			</div>
-	</div>
 
 
-	
 
 			<div class='portfolio'>
 				<a id="portfolio"></a>
-			  <h2>Projects</h2>
+			  <h2 style="color: #FECD04">Projects</h2>
 			  <img class='portpic' src='img/myweb.jpg' alt="portfolio picture">
 			  
 
@@ -94,6 +100,7 @@
 			      First Site I created in early 2016<br>
 			      Created this site along with Jon Duckett books and Free Code Camp <br>
 			HTML, CSS, Javascript, and Jquery were used to create the web page.<br>
+			Designed website from the ground up
 			  </span>
 			  
 			  <div class='tags'>
@@ -108,7 +115,37 @@
 
 
 			<div class='portfolio'>
+
+
+				<div class='portfolio'>	  
+			  <img class='portpic' src='img/chifront.jpg' alt="chicago picture">
 			  
+			  <h4>Chicago Guide</h4>
+			    <div class='boxes'>
+			      <a  class="box"  href="chicago.html">Site</a>
+			      <a  class="box2"  href="https://github.com/dennislee89/guide-to-chicago">Code</a>
+			    </div>
+			  
+			    <span class='portText'>
+			    Designed webpage using HTML, Sass, JavaScript, jQuery 
+				<br> Built the site with mobile device first in mind.
+				<br> My first attempt in using/learning how to configure weather API
+				<br> Learned how to use JSON along with the weather API
+			  </span>
+			  
+			  <div class='tags'>
+			      <div class='tag'>HTML</div>
+			      <div class='tag'>CSS</div>
+			      <div class='tag'>JavaScript</div>
+			      <div class='tag'>jQuery</div>
+			      <div class='tag'>API</div>
+			  </div>
+			 <hr>
+			</div>
+
+
+
+		
 			  <img class='portpic' src='img/bullsSite.jpg' alt="bullsfansite picture">
 			  
 			  <h4>Chicago Bulls Fan site</h4>
@@ -136,6 +173,60 @@
 
 
 			<div class='portfolio'>
+			  <img class='portpic' src='img/Lsk.jpg' alt="LSK printing">
+			  
+			  <h4>LSK Printing</h4>
+			    <div class='boxes'>
+			      <a  class="box"  href="http://www.lskprinting.com/">Site</a>
+			      <a  class="box2"  href="https://github.com/dennislee89/LSK-Printing">Code</a>
+			    </div>
+			  
+			    <span class='portText'>
+			    Designed webpage using HTML, Sass, JavaScript, jQuery 
+				<br> Learned how to use flexbox for css to make site more mobile responsive
+				<br> Created contact form for customers to reach company
+			  </span>
+			  
+			  <div class='tags'>
+			      <div class='tag'>HTML</div>
+			      <div class='tag'>CSS</div>
+			      <div class='tag'>JavaScript</div>
+			      <div class='tag'>jQuery</div>
+			  </div>
+			 <hr>
+			</div>
+
+
+
+			<div class='portfolio'>
+			  <img class='portpic' src='img/weatherpic.jpg' alt="LSK printing">
+			  
+			  <h4>Weather App</h4>
+			    <div class='boxes'>
+			      <a  class="box"  href="weather.html">Site</a>
+			      <a  class="box2"  href="https://github.com/dennislee89/weather">Code</a>
+			    </div>
+			  
+			    <span class='portText'>
+			    Designed webpage using HTML, Sass, JavaScript, jQuery 
+				<br> Learned how to use the Weather API wunderground
+				<br> Currently trying to add 5 day forecast and changing background image reflecting the currecnt temperature.
+			  </span>
+			  
+			  <div class='tags'>
+			      <div class='tag'>HTML</div>
+			      <div class='tag'>CSS</div>
+			      <div class='tag'>JavaScript</div>
+			      <div class='tag'>jQuery</div>
+			      <div class='tag'>API</div>
+			  </div>
+			 <hr>
+			</div>
+
+
+
+
+			<div class='portfolio'>
 			  
 			  <img class='portpic' src='img/portfolio1.jpg' alt="badmintonSite picture">
 			  
@@ -157,42 +248,15 @@
 			      <div class='tag'>JavaScript</div>
 			      <div class='tag'>jQuery</div>
 			  </div>
-			  <hr>
+			  
 			</div>
 
-
-
-
-			<div class='portfolio'>	  
-			  <img class='portpic' src='img/chifront.jpg' alt="chicago picture">
-			  
-			  <h4>Chicago Guide</h4>
-			    <div class='boxes'>
-			      <a  class="box"  href="chicago.html">Site</a>
-			      <a  class="box2"  href="https://github.com/dennislee89/guide-to-chicago">Code</a>
-			    </div>
-			  
-			    <span class='portText'>
-			    Designed webpage using HTML, SASS, Javascript, jQuery 
-				<br> Built the site with mobile device first in mind.
-				<br> My first attempt in using/learning how to configure weather API
-				<br> Learned how to use JSON along with the weather API
-			  </span>
-			  
-			  <div class='tags'>
-			      <div class='tag'>HTML</div>
-			      <div class='tag'>CSS</div>
-			      <div class='tag'>JavaScript</div>
-			      <div class='tag'>jQuery</div>
-			      <div class='tag'>API</div>
-			  </div>
-			 
-			</div>
 
 
 				<div class="contact">
 					<a id="contactme"></a>
        				 <h2>Contact</h2>
+
 				        <form id="form" action="https://formspree.io/dennislee0890@hotmail.com"
 				      method="POST">
 				        	<span >Your Name:</span>
@@ -205,25 +269,23 @@
 				         <textarea id="messages" name="message" placeholder="Message" wrap="virtual"></textarea>
 				         <button type="submit">Submit</button>
 				         <input type="hidden" name="_next" value="" />
-
 				       </form>
+
+
+					<section class="footer-social flex-bottom">
+					    <span class="footer-social-overlap footer-social-icons-wrapper">
+					    <a href="https://www.linkedin.com/in/dennis-lee-b4785633/" class="footer-link" ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+					    <a href="https://github.com/dennislee89" class="footer-link" ><i class="fa fa-github" aria-hidden="true"></i></a>
+					    <a href="https://codepen.io/dennislee89/#" class="footer-link"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+					    </span>
+					</section>
+
      			 </div>
 
-<!--
-<footer>
-  <div class='bottom'>
-   <a href="https://github.com/dennislee89"> <div class="bottomicon fontawesome-github"></div></a>
-   <a href="https://www.linkedin.com/in/dennis-lee-b4785633?trk=nav_responsive_tab_profile"> <div class="bottomicon fontawesome-linkedin-sign"></div></a>
-    <div class="bottomicon fontawesome-globe"></div>
-  </div>
-</footer>				
-			
--->
 
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script> 
 <script type="text/javascript" src="javascript/portfolioscript.js"></script>  
-<script type="text/javascript" src="javascript/smoothscroll.js"></script>
+
 
 </body>
 </html>

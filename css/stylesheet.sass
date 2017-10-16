@@ -7,11 +7,16 @@
 body
   padding: 0
   margin: 0
+  background-color: #D8D8D8
+  
+.coverpic
+  width: 100%
+  height: 100vh
 
 h1
   text-align: center
   font-family: 'Open Sans', sans-serif
-  color: white
+  color: #FECD04
   position: absolute
   top: 15%
   left: 3%
@@ -23,6 +28,17 @@ h1
 h2
   text-align: center
   font-size: 4em
+  color: #011627
+  font-family: 'Open Sans', sans-serif
+
+h3
+  padding: 10px 0 5px 0
+  font-size: 2em
+  color: white
+  
+h4
+  text-align: center
+  font-size: 2.5em
   color: white
 
 .jobtitle
@@ -107,37 +123,28 @@ h2
   font-size: 75px
 
 
+.about
+  background-color: #D8D8D8
 
-
-/* about me font*/
-.aboutMe
-  color: black
-
-
-/*contact section*/
-.con
-  font-family: 'Open Sans', sans-serif
-  color: white
-  position: absolute
-  font-size: 6em
-  text-align: center
-  width: 95%
-  z-index: 2
-  margin-top: 25px
-  
-h3
-  padding: 10px 0 5px 0
-  font-size: 2em
-  color: white
-  
-h4
-  text-align: center
-  font-size: 2.5em
-  color: white
-
-.coverpic
-  width: 100%
+#main-wrap > div
   height: 100vh
+  overflow: hidden
+
+#text-left
+  float: left
+  width: 60%
+  margin-left: 10%
+  padding-left: 5%
+  color: #011627
+  font-family: 'Open Sans', sans-serif
+  font-size: 1.4em
+  border-left: thick solid #011627
+  font-weight: 100
+  text-indent: 50px
+
+#pic-right
+  padding-left: 5%
+
   
   
 /* Nav */
@@ -165,91 +172,45 @@ nav
       
     a:hover
       color: orange
-  
-  /* flip cards */
-h5
-  font-size: 1.5em
 
-#week-wrap
-  height: auto
-  max-width: 100%
-  width: auto
-  background-color: #efefef
-  text-align: center
-  padding-bottom: 5%
 
-#card, #card2, #card3
-  text-align: center
+
+/*About */
+.about-tools
+  width: 100%
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -ms-flex-pack: distribute
+  justify-content: space-around
   position: relative
-  display: inline-block
-  max-width: 30%
-  cursor: pointer
-  margin: 1%
-  -webkit-transition: all 1s ease
-  transition: all 1s ease
-  -webkit-transform-style: preserve-3d
-  transform-style: preserve-3d
-  -webkit-backface-visibility: hidden
-  backface-visibility: hidden
-  border-style: solid
+  img
+    width: 10%
 
-.back
-  top: 0
-  left: 0
-  z-index: 1
-  -webkit-backface-visibility: hidden
-  backface-visibility: hidden
-  position: absolute
+.about-tools-flex-bottom
+  h3
+    color: black
+
+.about-tools-overlap
+  position: relative
+  z-index: 2
+  background-color: #D8D8D8
+
+
+.flex-middle
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-flow: row wrap
+  flex-flow: row wrap
+
+
+.about-tools-overlap > a
   color: white
-  background-color: #0099cc
-  width: 100%
-  height: 100%
-  -webkit-transform: rotateY(180deg)
-  transform: rotateY(180deg)
+  &:not(:first-child)
+    margin-left: 0.38em
 
-.figcaption
-  text-align: center
-  width: 100%
-  height: 0
-  font-size: 4em
-  line-height: 0
-  color: white
-  position: absolute
-  top: 10%
-  z-index: 1
 
-#card img
-  -webkit-display: block
-  display: block
-  max-width: 100%
-
-#card2 img, #card3 img
-  display: block
-  max-width: 100%
-
-.flip
-  -webkit-transform: rotateY(180deg)
-  transform: rotateY(180deg)
-
-     
- 
-/* skill circles */
-.skill
-  width: 100px
-  height: 100px
-  border-radius: 100px
-  font-size: 1em
-  color: black
-  line-height: 100px
-  text-align: center
-  border-style: solid
-  border-color: black
-  background: orange
-  margin: 10px 20px 10px 10px
-  display: inline-block
-  
-
-  
 .portfolio
   background-color: #202020 
   padding: 20px 5% 2% 5%
@@ -388,37 +349,39 @@ textarea
     cursor: pointer
   
 /*footer*/
-.bottom
-  margin-top: 450px
-  text-align: center
-  
-.bottomicon
-  display: inline-block
-  width: 90px
-  height: 90px
-  line-height: 90px
-  margin: 50px
-  margin-left: 15px
-  font-family: fontawesome
+.flex-bottom
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-flow: row wrap
+  flex-flow: row wrap
+
+.footer-social
+  width: 100%
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -ms-flex-pack: distribute
+  justify-content: space-around
+  position: relative
+  margin-top: 5px
+
+.footer-social-overlap
+  position: relative
+  z-index: 2
+
+.footer-social-overlap > a
   font-size: 5em
-  text-align: center
-  color: #bbb
-  border-radius: 70%
-  background: white
-  overflow: hidden
-  transition: color .3s
-  
-.bottomicon:hover
-  cursor: pointer
-  color: lightblue
+  padding: 0 30px 0 30px
+  color: white
+  &:not(:first-child)
+    margin-left: 0.38em
+
+.footer-link
+  &:hover
+    color: #00FFFF
 
 
-footer
-  background-color: #202020
-  padding-top: 120px
-  padding-bottom: 0
-  margin: 0
-  
   /*media queries*/
 @media screen and (max-width: 770px)
 
@@ -431,10 +394,7 @@ footer
 
   .coverpic
     height: 600px  
-
-  h2.con
-    font-size: 3em
-  
+ 
   .bottomicon
     margin: 15px
     width: 70px
@@ -444,28 +404,18 @@ footer
   .bottom
     margin-right: 25px
 
+  #main-wrap
+    height: 100vh
+
+  #text-left
+    display: block
+    width: 80%
+
+  #pic-right
+    display: none
+
   h5
     font-size: 1em
-
-  .figcaption
-    font-size: 2em
-
-  #card, #card2, #card3
-    -webkit-backface-visibility: hidden 
-    display: block
-    max-width: 100%
-
-  #card img
-    display: block
-    max-width: 100%
-    margin-left: auto
-    margin-right: auto
-
-  #card2 img, #card3 img
-    display: block
-    max-width: 100%
-    margin-left: auto
-    margin-right: auto
 
   .sendbtn
     right: 40%
@@ -502,6 +452,22 @@ footer
 
   form
     width: 400px
+
+  .about-tools-flex-bottom
+    display: none
+
+
+@media screen and (max-width: 375px)
+  #text-left
+    font-size: 1em
+  
+  .footer-social-overlap > a
+    font-size: 3em
+
+
+@media screen and (max-width: 320px)
+  .footer-social-overlap > a
+    display: none
 
 
 @media screen and (max-width: 450px)

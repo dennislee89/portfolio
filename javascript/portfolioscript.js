@@ -1,16 +1,3 @@
-//Flip Card
-function flip(){
-  document.getElementById('card').classList.toggle('flip');
-}
-
-function flip2(){
-  document.getElementById('card2').classList.toggle('flip');
-}
-
-function flip3(){
-  document.getElementById('card3').classList.toggle('flip');
-}
-
 
 /*Side Nav*/
 function openNav() {
@@ -20,3 +7,17 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+
+
+
+$('li').click(function(e) {
+
+  // Create a variable with the link found in the list-item
+  var link = $(this).children('a');      
+  
+  $('html,body').animate({
+    scrollTop: $(link.attr('href')).offset().top
+  }, 2000);
+});
+
